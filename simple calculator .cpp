@@ -3,30 +3,30 @@ using namespace std;
 
 int main() {
 
-    double a, b;     // Variables to store numbers
+    double x, y;     // Variables to store numbers
     char op;         // Variable to store operator
 
-    cout << "Enter first number: ";
-    cin >> a;
+    cout << "Enter x: ";
+    cin >> x;
 
     cout << "Enter operator (+, -, *, /): ";
     cin >> op;
 
-    cout << "Enter second number: ";
-    cin >> b;
+    cout << "Enter y: ";
+    cin >> y;
 
     if(op == '+') {
-        cout << "Result: " << a + b;
+        cout << "Result: " << x + y;
     }
     else if(op == '-') {
-        cout << "Result: " << a - b;
+        cout << "Result: " << x - y;
     }
     else if(op == '*') {
-        cout << "Result: " << a * b;
+        cout << "Result: " << x * y;
     }
     else if(op == '/') {
-        if(b != 0)
-            cout << "Result: " << a / b;
+        if(y != 0)
+            cout << "Result: " << x / y;
         else
             cout << "Error! Division by zero is not allowed.";
     }
